@@ -1,0 +1,16 @@
+{
+  "name": "true-rng",
+  "version": "1.0.0",
+  "description": "True random number generator using current weather data",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shreyas Dethe",
+  "license": "ISC"
+}
