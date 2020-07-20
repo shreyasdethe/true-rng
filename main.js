@@ -71,4 +71,5 @@ app.get('/', function (req, res) {
 
 
 // setup the server and start listening
-var server = app.listen(8081);
+var port = process.env.PORT || 8081;
+var server = app.listen(port);
