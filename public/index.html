@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>True Random Number API</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+</head>
+
+<body bgcolor="#121212">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div class="row">
+      <div class="twelve columns">
+        <h1 style="text-align: left; padding-top: 80px; color: #7a2fac; opacity: 87%;">
+          True Random Number Generator API
+        </h1>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4 style="text-align: left; padding-top: 40px; color: #7d5797; opacity: 66%;">
+          Request a random number between 0 and 1
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h2 style="text-align: left; opacity: 66%;">
+          <code>
+            request: GET /n
+          </code>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h2 style="text-align: left; opacity: 66%;">
+          <code>
+            response: {"n": true_random_number}
+          </code>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4 style="text-align: left; padding-top: 40px; color: #7d5797; opacity: 66%;">
+          Example CURL command
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4 style="text-align: left; opacity: 66%">
+          <code>
+            curl -X GET -v -i 'https://true-rng.herokuapp.com/n'
+          </code>
+        </h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h6 style="text-align: left; padding-top: 40px; color: #7d5797; opacity: 66%;">
+          uses <a href="https://openweathermap.org/api">OpenWeathermap Weather API</a> for truly random data
+          <br> <a href="true-rng.herokuapp.com">true-rng</a> by <a href="https://github.com/shreyasdethe">shreyasdethe</a>
+        </h6>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
