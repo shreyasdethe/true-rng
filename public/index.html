@@ -127,6 +127,40 @@
 
 
   </div>
+  
+  <script type="text/javascript" charset="utf-8">
+    
+    requestWeatherData = function (url) {
+        return new Promise(function (resolve, reject){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onload = function () {
+                if (this.status == 200 & this.readyState == 4) {
+                 // here weather will contain the number n
+                 let weather = JSON.parse(this.responseText);
+                resolve(weather);
+                }
+                else {
+                   reject(Error(this.statusText));
+                }
+            }
+            xhr.onerror = function () {
+               reject(Error(this.statusText));
+            }
+           xhr.send();
+        });
+    }
+    
+    generateNumber(){
+        let url = "https://true-rng.herokuapp.com";
+        requestWeatherData(url)
+        .then(function(weather)){
+            document.getElementById("localN").innerHTML = weather.n;
+        }
+    }
+    
+    generateNumber();
+  </script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
