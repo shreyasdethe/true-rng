@@ -77,22 +77,21 @@ app.get('/n', function (req, res) {
         });
 });
 
+// for example number and button onclick
+generateNumber = function() {
+    let url = "https://true-rng.herokuapp.com/n";
+    requestWeatherData(url)
+        .then(function(weather) {
+
+            // here the weather object will contain the number
+            let num = weather;
+            let numBox = document.getElementById("localN");
+            numBox.innerHTML = num.n;
+        })
+}
 
 // setup the server and start listening
 var port = process.env.PORT || 8081;
 var server = app.listen(port);
 console.log("Listening on port: " + port);
-
-generateNumber = function(){
-    let url = "https://true-rng.herokuapp.com/n";
-    requestWeatherData(url)
-    .then(function(weather){
-        
-        // here the weather object will contain the number
-        let num = weather;
-        let numBox = document.getElementById("localN");
-        numBox.innerHTML = num.n;
-    })
-}
-
 generateNumber();
