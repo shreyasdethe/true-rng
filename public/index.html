@@ -54,28 +54,28 @@
     <div class="row">
       <div class="twelve columns">
         <h4 style="text-align: left; padding-top: 30px; color: #7d5797; opacity: 66%;">
-          Request a random number between 0 and 1
+          Request a random number between 0 and 1 (double precision)
         </h4>
       </div>
     </div>
 
     <div class="row">
       <div class="twelve columns">
-        <h2 style="text-align: left; opacity: 66%;">
+        <h3 style="text-align: left; opacity: 66%;">
           <code>
             request: GET /n
           </code>
-        </h2>
+        </h3>
       </div>
     </div>
 
     <div class="row">
       <div class="twelve columns">
-        <h2 style="text-align: left; opacity: 66%;">
+        <h3 style="text-align: left; opacity: 66%;">
           <code>
             response: {"n": true_random_number}
           </code>
-        </h2>
+        </h3>
       </div>
     </div>
 
@@ -96,7 +96,26 @@
         </h4>
       </div>
     </div>
-
+    
+    <div class="row">
+        <div class="twelve columns">
+            <h4 style="text-align: left; padding-top: 40px; color: #7d5797; opacity: 66%;">
+                Try now
+            </h4>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="two columns">
+            <button onclick="generateNumber">Generate</button>
+        </div>
+        <div class="ten columns">
+            <h4 style="text-align: left; opacity: 66%">
+                <code id="localN"></code>
+            </h4>
+        </div>
+    </div>
+    
     <div class="row">
       <div class="twelve columns">
         <h6 style="text-align: left; padding-top: 40px; color: #7d5797; opacity: 66%;">
